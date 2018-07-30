@@ -16,5 +16,18 @@ namespace BookRegistrationEF
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            List<Book> books = BookDB.GetAllBooks();
+
+            PopulateBookComboBox(books);
+        }
+
+        private void PopulateBookComboBox(List<Book> books)
+        {
+            cboBookList.DataSource = books;
+            cboBookList.DisplayMember = nameof(Book.Title);
+        }
     }
 }

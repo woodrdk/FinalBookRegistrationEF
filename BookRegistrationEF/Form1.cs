@@ -29,5 +29,10 @@ namespace BookRegistrationEF
             cboBookList.DataSource = books;
             cboBookList.DisplayMember = nameof(Book.Title);
         }
+
+        private void cboBookList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,13 +31,14 @@
             this.cboBookList = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cboBookList
             // 
             this.cboBookList.FormattingEnabled = true;
             this.cboBookList.Location = new System.Drawing.Point(35, 35);
-            this.cboBookList.Name = "comboBox1";
+            this.cboBookList.Name = "cboBookList";
             this.cboBookList.Size = new System.Drawing.Size(510, 21);
             this.cboBookList.TabIndex = 0;
+            this.cboBookList.SelectedIndexChanged += new System.EventHandler(this.cboBookList_SelectedIndexChanged);
             // 
             // Form1
             // 
